@@ -1,0 +1,56 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "editor.rulers": [80],
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "files.associations": {
+    ".huskyrc": "json",
+    ".lintstagedrc": "json",
+    ".releaserc": "json",
+    ".stylelintrc": "json"
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "eslint.run": "onSave",
+  "eslint.nodePath": "./node_modules",
+  "eslint.validate": ["javascript", "vue"],
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.codeAction.disableRuleComment": {
+    "enable": true,
+    "location": "separateLine"
+  },
+  "stylelint.enable": true,
+  "css.validate": false,
+  "jest.autoEnable": true,
+  "jest.showCoverageOnLoad": true,
+  "TodoParser": {
+    "markers": ["@todo"],
+    "folderExclude": ["node_modules", ".vscode", ".history", "src/vendor"],
+    "include": ["js", "vue", "css"],
+    "exclude": ["json"],
+    "autoDefaultMarkers": true
+  },
+  "todohighlight.isEnable": true,
+  "todohighlight.keywords": ["@todo"],
+  "vetur.validation.template": false
+}

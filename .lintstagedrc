@@ -1,0 +1,13 @@
+{
+  "src/**/*.{vue,js}": [
+    "npm run lint:fix",
+    "npx prettier",
+    "npm run lint:styles:fix",
+    "echo 'npm run test:unit -- --bail --findRelatedTests'",
+    "git add"
+  ],
+  "src/**/*.{css,scss,sass}": [
+    "npm run lint:styles:fix",
+    "git add"
+  ]
+}

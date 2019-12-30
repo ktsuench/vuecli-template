@@ -1,0 +1,27 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "at-rule-no-vendor-prefix": true,
+    "font-family-name-quotes": "always-unless-keyword",
+    "function-url-quotes": "always",
+    "max-line-length": 80,
+    "media-feature-name-no-vendor-prefix": true,
+    "plugin/selector-bem-pattern": {
+      "preset": "bem",
+      "presetOptions": {
+        "namespace": "pdb"
+      },
+      "componentName": "^([amo]-[a-z][a-zA-Z0-9]+(__[a-z][a-zA-Z0-9]+)?|-[a-z][a-zA-Z0-9]+)$",
+      "componentSelectors": "^\\.pdb-{componentName}(:[a-zA-Z]+)?$",
+      "utilitySelectors": "^\\.pdb-u-[a-z][a-zA-Z0-9]+$"
+    },
+    "property-no-vendor-prefix": true,
+    "selector-attribute-quotes": "always",
+    "selector-no-vendor-prefix": true,
+    "string-quotes": "single",
+    "value-no-vendor-prefix": true
+  }
+}

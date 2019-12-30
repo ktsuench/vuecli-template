@@ -1,0 +1,4 @@
+src/vendor
+build
+dist
+node_modules
