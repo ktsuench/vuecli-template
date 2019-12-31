@@ -2,7 +2,7 @@ import { shallowMount } from '@vue/test-utils';
 import List from '@/components/List.vue';
 
 describe('List.vue', () => {
-  describe('props.items properties', () => {
+  describe('props.items property', () => {
     const wrapper = shallowMount(List, { propsData: { items: [] } });
     const itemsProp = wrapper.vm.$options.props.items;
 
