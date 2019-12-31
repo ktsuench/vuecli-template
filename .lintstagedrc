@@ -3,7 +3,7 @@
     "npm run lint:fix",
     "npx prettier",
     "npm run lint:styles:fix",
-    "npm run test:unit -- --bail --findRelatedTests",
+    "npm run test:unit -- --config=jest.commit.config.js",
     "git add"
   ],
   "src/**/*.{css,scss,sass}": [

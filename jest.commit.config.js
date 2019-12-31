@@ -1,13 +1,8 @@
 module.exports = {
   preset: '@vue/cli-plugin-unit-jest',
   roots: ['<rootDir>/src/', '<rootDir>/tests/'],
-  collectCoverage: true,
-  collectCoverageFrom: [
-    '!src/**/*.spec.js',
-    '!src/vendor/*.js',
-    '!src/main.js',
-    'src/**/*.{js,vue}',
-  ],
+  bail: true,
+  coverage: true,
   coverageThreshold: {
     global: {
       statements: 100,
@@ -16,8 +11,9 @@ module.exports = {
       lines: 100,
     },
   },
-  coverageDirectory: 'coverage/all',
+  coverageDirectory: 'coverage/commit',
   coverageReporters: ['html', 'text-summary'],
+  findRelatedTests: true,
   testPathIgnorePatterns: [
     '/node_modules/',
     '<rootDir>/node_modules/',
