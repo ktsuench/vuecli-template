@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.vue matches snapshot 1`] = `
+<div class="home"><img alt="Vue logo" src="../assets/logo.png">
+  <message-toggle-stub></message-toggle-stub>
+  <list-stub items="list item 1,list item 2,list item 3"></list-stub>
+</div>
+`;
