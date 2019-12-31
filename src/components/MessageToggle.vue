@@ -14,9 +14,9 @@ export default {
   components: {
     Message,
   },
-  data() {
-    return { msg: null };
-  },
+  data: () => ({
+    msg: null,
+  }),
   methods: {
     toggleMessage() {
       this.msg = this.msg === 'message' ? 'toggled message' : 'message';
